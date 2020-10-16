@@ -1,0 +1,140 @@
+.item-container {
+  display: flex;
+  justify-content: center;
+}
+.card-content {
+  position: relative;
+  height: 420px;
+  width: 400px;
+  text-align: left;
+  padding: 10px 10px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.item {
+  position: relative;
+  z-index: 2;
+}
+
+.card-content::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+  background-color: #fff;
+  z-index: 1;
+}
+.card-content:hover::before {
+  transform: scaleX(1.13);
+  box-shadow: 2px 5px 15px 0 rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+.card-content:hover .item {
+  z-index: 4;
+}
+
+.feature-item-img-box {
+  width: 100%;
+  overflow: hidden;
+}
+.feature-item-img-box img {
+  width: 100%;
+  transition: 0.3s;
+}
+.card-content:hover .feature-item-img-box img {
+  transform: scale(1.1);
+}
+.item span {
+  color: #777;
+}
+.line {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-top: 0.6rem;
+  margin-bottom: 1rem;
+}
+.item-name a {
+  text-decoration: none;
+  display: block;
+  color: #222;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  transition: 0.3s;
+}
+.item-name a:hover {
+  color: #ffd80a;
+}
+.button-items-group {
+  display: none;
+  justify-content: center;
+  animation: animate 0.5s ease-in-out;
+  transition: 0.5s;
+}
+.card-content:hover .button-items-group {
+  display: flex;
+}
+.button-items-group > div {
+  display: flex;
+  width: 350px;
+  justify-content: center;
+}
+.button-items-group a {
+  display: inline-block;
+  height: 40px;
+  padding: 0 3rem;
+  line-height: 40px;
+  background-color: #222;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: 0.5s ease-in-out;
+}
+.star-group {
+  margin-bottom: 1rem;
+}
+.fa-check {
+  margin-left: 5px;
+}
+
+.heart-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #909090;
+  color: #909090;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.heart-icon:hover {
+  color: #fff;
+  background-color: #ffd80a;
+  border-color: #fff;
+}
+.button-items-group a:hover {
+  background-color: #ffd80a;
+  color: #222;
+  font-weight: 500;
+}
+/*------------ List Items ------------*/
+.list-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

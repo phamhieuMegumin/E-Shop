@@ -1,0 +1,37 @@
+.info-banner {
+  padding: 40px 0;
+}
+.info-banner .slick-arrow {
+  display: none !important;
+}
+.info-items {
+  padding: 10px 30px;
+  display: flex;
+}
+.info-box {
+  outline: none;
+}
+.icon {
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 3px solid #ffd80a;
+  margin-right: 15px;
+}
+.info-content {
+  flex: 1;
+}
+.info-content h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.info-content p {
+  font-size: 14px;
+  color: #777;
+  margin-top: 5px;
+  font-weight: 500;
+}

@@ -1,0 +1,27 @@
+.feature-products {
+  margin-top: 100px;
+}
+.feature-products > div {
+  display: flex;
+  justify-content: center;
+}
+.feature-title {
+  width: 500px;
+  text-align: center;
+}
+.feature-title h4 {
+  font-family: "Yellowtail", cursive;
+  color: #ffd80a;
+  font-size: 32px;
+  font-weight: 400;
+}
+.feature-title h1 {
+  font-size: 1.6rem;
+  color: #222;
+  margin-top: 0.6rem;
+}
+.feature-title p {
+  color: #777;
+  /* font-family: "roboto"; */
+  margin-top: 0.7rem;
+}
