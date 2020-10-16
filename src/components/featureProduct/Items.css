@@ -58,6 +58,10 @@
   margin-top: 0.6rem;
   margin-bottom: 1rem;
 }
+.item-name {
+  display: flex;
+  justify-content: space-between;
+}
 .item-name a {
   text-decoration: none;
   display: block;
@@ -69,6 +73,17 @@
 }
 .item-name a:hover {
   color: #ffd80a;
+}
+.item-price span:nth-child(1) {
+  margin-right: 10px;
+  color: #222;
+  font-weight: 500;
+  font-size: 20px;
+}
+.item-price span:nth-child(2) {
+  font-weight: 500;
+  font-size: 20px;
+  color: #222;
 }
 .button-items-group {
   display: none;
@@ -123,6 +138,20 @@
   background-color: #ffd80a;
   color: #222;
   font-weight: 500;
+}
+
+.sale-price {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border: 1px solid #ffd80a;
+  z-index: 5;
 }
 /*------------ List Items ------------*/
 .list-item {

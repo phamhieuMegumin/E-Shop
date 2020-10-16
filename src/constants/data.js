@@ -6,6 +6,8 @@ export const DATA = [
     photoURL: "img/item4.jpg",
     photoURL_Hover: "img/item5.jpg",
     isHover: false,
+    isSale: 35,
+    price: 250,
   },
   {
     id: 1123,
@@ -14,6 +16,8 @@ export const DATA = [
     photoURL: "img/item6.jpg",
     photoURL_Hover: "img/item5.jpg",
     isHover: false,
+    isSale: 25,
+    price: 625,
   },
   {
     id: 1124,
@@ -22,6 +26,8 @@ export const DATA = [
     photoURL: "img/item8.jpg",
     photoURL_Hover: "img/item7.jpg",
     isHover: false,
+    isSale: 20,
+    price: 580,
   },
   {
     id: 1125,
@@ -30,6 +36,8 @@ export const DATA = [
     photoURL: "img/item10.jpg",
     photoURL_Hover: "img/item9.jpg",
     isHover: false,
+    isSale: null,
+    price: 520,
   },
   {
     id: 1126,
@@ -38,6 +46,8 @@ export const DATA = [
     photoURL: "img/item12.jpg",
     photoURL_Hover: "img/item11.jpg",
     isHover: false,
+    isSale: null,
+    price: 690,
   },
   {
     id: 1127,
@@ -46,5 +56,7 @@ export const DATA = [
     photoURL: "img/item4.jpg",
     photoURL_Hover: "img/item5.jpg",
     isHover: false,
+    isSale: null,
+    price: 180,
   },
 ];
