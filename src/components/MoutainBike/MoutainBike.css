@@ -1,0 +1,74 @@
+.moutain-bike-cotainer {
+  display: flex;
+  margin-top: 30px;
+}
+.moutain-box {
+  width: 50%;
+  height: 400px;
+}
+.moutain-box .card-title h1 {
+  font-size: 46px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.moutain-box .button-card {
+  position: relative;
+  top: 20%;
+}
+.slide-bike-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.slide-bike-container .slick-arrow {
+  display: none !important;
+}
+.slide-bike-item {
+  width: 100%;
+  height: 100%;
+}
+.item-slide {
+  outline: none;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 50px;
+}
+.item-slide-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item-slide-box a {
+  width: 50%;
+  height: 50%;
+  text-decoration: none;
+  outline: none;
+  overflow: hidden;
+}
+.item-slide img {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+.item-slide img:hover {
+  transform: scale(1.1);
+}
+.item-slide-content {
+  text-align: center;
+}
+.slide-item-name {
+  display: flex;
+  justify-content: center;
+}
+.slide-item-name a {
+  font-size: 28px;
+}
+/* .slick-dots li button:before {
+  font-size: 10px;
+}
+.slick-dots li button {
+  font-size: 8px;
+  color: #ffd80a;
+} */

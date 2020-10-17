@@ -1,0 +1,17 @@
+.new-product {
+  width: 100%;
+
+  text-align: center;
+  margin-top: 80px;
+}
+.new-product-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.new-product-list {
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

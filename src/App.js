@@ -6,6 +6,8 @@ import Banner from "./components/Banner/Banner";
 import InfoBanner from "./components/InfoBanner/InfoBanner";
 import BannerCart from "./components/Cards/BannerCart";
 import FeatureProduct from "./components/featureProduct/FeatureProduct";
+import MoutainBike from "./components/MoutainBike/MoutainBike";
+import NewProduct from "./components/NewProduct/NewProduct";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <InfoBanner />
       <BannerCart />
       <FeatureProduct />
+      <MoutainBike />
+      <NewProduct />
     </div>
   );
 }
