@@ -8,6 +8,8 @@ import BannerCart from "./components/Cards/BannerCart";
 import FeatureProduct from "./components/featureProduct/FeatureProduct";
 import MoutainBike from "./components/MoutainBike/MoutainBike";
 import NewProduct from "./components/NewProduct/NewProduct";
+import UserReport from "./components/UserReport/UserReport";
+import DailyUpdate from "./components/DailyUpdate/DailyUpdate";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <FeatureProduct />
       <MoutainBike />
       <NewProduct />
+      <UserReport />
+      <DailyUpdate />
     </div>
   );
 }

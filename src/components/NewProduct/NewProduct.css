@@ -10,8 +10,12 @@
   margin-top: 50px;
 }
 .new-product-list {
-  padding: 0 20px;
+  padding: 0 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+.new-product-banner {
+  width: 600px;
+  height: 700px;
 }
