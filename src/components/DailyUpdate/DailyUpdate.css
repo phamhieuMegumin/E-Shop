@@ -1,24 +1,23 @@
 .daily-update {
   margin-top: 50px;
-  height: 100vh;
 }
 .daily-update-title {
   display: flex;
   justify-content: center;
+}
+.update-item {
+  width: 100%;
 }
 .update-item-container {
   overflow: hidden;
   position: relative;
   margin-top: 20px;
 }
-.update-item-box-img {
-  width: 500px;
-  height: 400px;
-}
+
 .update-item-box-img img {
   width: 100%;
   height: 100%;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 .update-item-box-img:hover img {
   transform: scale(1.1);
@@ -42,7 +41,6 @@
 }
 .update-item-content {
   margin-top: 20px;
-  width: 500px;
 }
 .update-item-content a {
   text-decoration: none;
@@ -53,6 +51,7 @@
 .update-item-content p {
   color: #777;
   margin: 10px 0;
+  font-size: 14px;
 }
 .update-item-content a:nth-child(3) {
   font-size: 16px;
@@ -73,15 +72,15 @@
   margin-top: 20px;
 }
 .item-update-left {
-  width: calc(60% - 20px);
+  width: calc(70% - 20px);
   margin-right: 20px;
 }
 .item-update-left .update-item-box-img {
   width: 100%;
-  height: 550px;
+  height: 560px;
 }
 .item-update-right {
-  width: 40%;
+  width: 30%;
 }
 .item-update-right .update-item-box-img {
   width: 100%;

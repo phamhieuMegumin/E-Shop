@@ -102,3 +102,29 @@ export const NEW_PRODUCT = [
     price: 520,
   },
 ];
+export const DATA_UPDATE = [
+  {
+    id: 1,
+    date: "20 APR 2017",
+    title: "New bike set-up instruction",
+    imgURL: "img/update.jpg",
+    content:
+      "Parturient in potenti id rutrum duis torquent parturient sceler isque sit vestibulum a posuere scelerisque viverra urna. Egestas tristique sceler...",
+  },
+  {
+    id: 2,
+    date: "08 OCT 2014",
+    title: "How to set your saddle height",
+    imgURL: "img/update1.jpg",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiuasmod tempor incididunt....",
+  },
+  {
+    id: 3,
+    date: "8 OCT 2014",
+    title: "Bike light comparison",
+    imgURL: "img/update2.jpg",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiuasmod tempor incididunt....",
+  },
+];

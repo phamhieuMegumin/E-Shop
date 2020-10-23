@@ -1,16 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 // const imgSrc = require("img/banner1.jpg");
 function UserReportSlide() {
+  const [slideSize, setSlideSize] = useState(2);
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToShow: slideSize,
+    slidesToScroll: slideSize,
   };
+  const setWidth = () => {
+    if (window.innerWidth < 1080) {
+      setSlideSize(1);
+    } else setSlideSize(2);
+  };
+  window.addEventListener("resize", setWidth);
+
   return (
     <div>
       <Slider {...settings}>

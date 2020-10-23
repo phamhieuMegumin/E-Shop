@@ -2,6 +2,7 @@
   background-image: url("banner1.jpg");
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   object-fit: cover;
   padding: 100px 10px;
   display: flex;
@@ -76,4 +77,9 @@
 .user-slider-content p {
   font-size: 16px;
   color: #777;
+}
+@media (max-width: 1080px) {
+  .user-slider {
+    width: 900px;
+  }
 }

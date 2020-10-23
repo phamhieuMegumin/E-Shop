@@ -10,6 +10,7 @@ import MoutainBike from "./components/MoutainBike/MoutainBike";
 import NewProduct from "./components/NewProduct/NewProduct";
 import UserReport from "./components/UserReport/UserReport";
 import DailyUpdate from "./components/DailyUpdate/DailyUpdate";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <NewProduct />
       <UserReport />
       <DailyUpdate />
+      <Footer />
     </div>
   );
 }

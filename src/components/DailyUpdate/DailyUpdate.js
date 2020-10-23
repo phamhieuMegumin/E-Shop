@@ -1,6 +1,7 @@
 import React from "react";
 import "./DailyUpdate.css";
 import DailyUpdateItem from "./DailyUpdateItem";
+import { DATA_UPDATE } from "../../constants/data";
 function DailyUpdate() {
   return (
     <div className="daily-update">
@@ -20,11 +21,11 @@ function DailyUpdate() {
         <div className="daily-update-list">
           <div>
             <div className="item-update-left">
-              <DailyUpdateItem />
+              <DailyUpdateItem data={DATA_UPDATE[0]} />
             </div>
             <div className="item-update-right">
-              <DailyUpdateItem />
-              <DailyUpdateItem />
+              <DailyUpdateItem data={DATA_UPDATE[1]} />
+              <DailyUpdateItem data={DATA_UPDATE[2]} />
             </div>
           </div>
         </div>
