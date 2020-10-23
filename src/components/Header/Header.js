@@ -23,6 +23,12 @@ function Header() {
       isActive: false,
     },
   ]);
+  const [showMenu, setShowMenu] = useState(false);
+  const ShowMenu = () => {
+    if (window.scrollY > 100 && showMenu === false) setShowMenu(true);
+    else if (window.scrollY <= 100 && showMenu === true) setShowMenu(false);
+  };
+  window.addEventListener("scroll", ShowMenu);
   const handleClick = (getindex) => {
     const newList = [];
     menuList.forEach((item, index) => {
@@ -39,7 +45,7 @@ function Header() {
     setMenuList(newList);
   };
   return (
-    <div className="header">
+    <div className={`header ${showMenu ? "active-header" : ""}`}>
       <div className="logo">Ridestyle</div>
       <nav>
         <ul>

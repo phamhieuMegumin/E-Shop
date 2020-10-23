@@ -83,3 +83,8 @@
     width: 900px;
   }
 }
+@media (max-width: 990px) {
+  .user-slider {
+    width: 700px;
+  }
+}

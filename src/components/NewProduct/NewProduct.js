@@ -18,7 +18,9 @@ function NewProduct() {
         </div>
 
         <div className="item-img-box new-product-banner">
-          <img src="img/banner.jpg"></img>
+          <div>
+            <img src="img/banner.jpg"></img>
+          </div>
         </div>
       </div>
     </div>

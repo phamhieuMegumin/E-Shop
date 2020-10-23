@@ -8,8 +8,18 @@
 .footer-container {
   width: 1200px;
   display: flex;
-  justify-content: space-around;
 }
+.footer-container > div:nth-child(1),
+.footer-container > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0 20px;
+}
+.footer-container > div:nth-child(1) {
+  width: calc(40% - 20px);
+}
+
 .footer-info-box,
 .about-list a {
   color: #fff;
@@ -19,7 +29,7 @@
   color: #ffd80a;
 }
 .footer-info-box {
-  width: 50%;
+  width: 70%;
   padding: 0 10px;
 }
 .footer-info-box > a {
@@ -57,6 +67,9 @@
 .about-list a {
   text-decoration: none;
   font-size: 14px;
+}
+.new-sletter {
+  width: 400px;
 }
 .slick-dots li.slick-active button:before {
   color: #ffd80a;
@@ -155,4 +168,14 @@
 }
 .footer-follow-group ul li:hover {
   transform: translateY(-10px);
+}
+@media (max-width: 990px) {
+  .footer-container {
+    flex-direction: column;
+    width: 600px;
+  }
+  .footer-container > div:nth-child(1),
+  .footer-container > div:nth-child(2) {
+    width: 100%;
+  }
 }

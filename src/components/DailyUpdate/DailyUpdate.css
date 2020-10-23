@@ -86,3 +86,23 @@
   width: 100%;
   height: 200px;
 }
+@media (max-width: 990px) {
+  .daily-update-list > div {
+    flex-direction: column;
+    width: 750px;
+  }
+  .item-update-left .update-item-box-img {
+    height: 400px;
+  }
+  .item-update-left,
+  .item-update-right {
+    width: 100%;
+  }
+  .item-update-right {
+    display: flex;
+    justify-content: space-between;
+  }
+  .item-update-right .update-item {
+    width: calc(50% - 10px);
+  }
+}

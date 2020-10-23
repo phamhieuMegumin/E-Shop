@@ -19,3 +19,23 @@
   width: 600px;
   height: 700px;
 }
+@media (max-width: 900px) {
+  .new-product-banner {
+    width: 500px;
+    height: 650px;
+  }
+}
+@media (max-width: 840px) {
+  .new-product-container {
+    flex-direction: column;
+  }
+  .new-product-banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .new-product-banner > div {
+    width: 450px;
+    overflow: hidden;
+  }
+}

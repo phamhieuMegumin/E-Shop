@@ -1,17 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./InfoBanner.css";
 function InfoBanner() {
+  const [showSlide, setShowSlide] = useState(3);
   const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: showSlide,
     slidesToScroll: 3,
     autoplay: true,
     autoplaySpeed: 4000,
   };
+  const changeSetting = () => {
+    if (window.innerWidth < 900) {
+      setShowSlide(2);
+    }
+  };
+  window.addEventListener("resize", changeSetting);
   return (
     <div className="info-banner">
       <Slider {...settings}>
